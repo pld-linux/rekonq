@@ -4,10 +4,11 @@ Version:	0.4.0
 Release:	1
 License:	GPL v3
 Group:		X11/Applications/Networking
-Source0:	http://dl.sourceforge.net/project/rekonq/%{version}/%{version}/rekonq-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/project/rekonq/%{version}/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	607e826131d8ead1e48a7611ba2ef075
 URL:		http://rekonq.sourceforge.net/
 BuildRequires:	QtWebKit-devel
+BuildRequires:	automoc4
 BuildRequires:	cmake >= 2.6.2
 BuildRequires:	kde4-kdelibs-devel >= 4.4.0
 BuildRequires:	qt4-build
