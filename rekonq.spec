@@ -1,11 +1,11 @@
 Summary:	WebKit KDE browser
 Name:		rekonq
-Version:	0.4.0
+Version:	0.6.1
 Release:	1
 License:	GPL v3
 Group:		X11/Applications/Networking
 Source0:	http://dl.sourceforge.net/project/rekonq/%{version}/%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	607e826131d8ead1e48a7611ba2ef075
+# Source0-md5:	3c67de04fe21bb3cd52509e45c821da5
 URL:		http://rekonq.sourceforge.net/
 BuildRequires:	QtWebKit-devel
 BuildRequires:	automoc4
