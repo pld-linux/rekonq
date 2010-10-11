@@ -21,6 +21,7 @@ rekonq is WebKit KDE browser.
 
 %prep
 %setup -q
+rm -f i18n/rekonq_sr@ije*.po
 
 %build
 install -d build
