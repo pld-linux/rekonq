@@ -3,7 +3,6 @@ Name:		rekonq
 Version:	0.7.92
 Release:	1
 License:	GPL v3
-Icon:		dupa
 Group:		X11/Applications/Networking
 Source0:	http://download.sourceforge.net/project/rekonq/%{version}/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	45192e0c059ab98d920891156b118b1c
