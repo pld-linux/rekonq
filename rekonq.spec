@@ -3,6 +3,7 @@ Name:		rekonq
 Version:	0.7.92
 Release:	1
 License:	GPL v3
+Icon:		dupa
 Group:		X11/Applications/Networking
 Source0:	http://download.sourceforge.net/project/rekonq/%{version}/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	45192e0c059ab98d920891156b118b1c
@@ -10,10 +11,10 @@ URL:		http://rekonq.kde.org/
 BuildRequires:	QtWebKit-devel
 BuildRequires:	automoc4
 BuildRequires:	cmake >= 2.6.2
-BuildRequires:	kde4-kdelibs-devel >= 4.4.0
+BuildRequires:	kde4-kdelibs-devel >= 4.7.0
 BuildRequires:	qt4-build
 BuildRequires:	qt4-linguist
-BuildRequires:	qt4-qmake >= 4.6.1
+BuildRequires:	qt4-qmake >= 4.7.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
