@@ -1,16 +1,18 @@
+# TODO: Qtoauth for Opera sync
 Summary:	WebKit KDE browser
 Name:		rekonq
-Version:	0.8.0
+Version:	1.0
 Release:	1
 License:	GPL v3
 Group:		X11/Applications/Networking
-Source0:	http://download.sourceforge.net/project/rekonq/%{version}/%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	ff92c4bef1a221d8293b2bca83d505f1
+Source0:	http://downloads.sourceforge.net/rekonq/%{name}-%{version}.tar.bz2
+# Source0-md5:	ca7b86ad4a778cbba52a14192865c7b0
 URL:		http://rekonq.kde.org/
 BuildRequires:	QtWebKit-devel
 BuildRequires:	automoc4
 BuildRequires:	cmake >= 2.6.2
 BuildRequires:	kde4-kdelibs-devel >= 4.7.0
+BuildRequires:	qca-devel >= 2.0
 BuildRequires:	qt4-build
 BuildRequires:	qt4-linguist
 BuildRequires:	qt4-qmake >= 4.7.0
@@ -41,7 +43,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} -C build install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%find_lang rekonq	--with-kde
+%find_lang rekonq --all-name \
+	--with-kde
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -49,6 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f rekonq.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog TODO INSTALL
+%attr(755,root,root) %{_bindir}/kwebapp
 %attr(755,root,root) %{_bindir}/rekonq
 %attr(755,root,root) %{_libdir}/libkdeinit4_rekonq.so
 
