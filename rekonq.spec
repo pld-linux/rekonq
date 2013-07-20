@@ -2,7 +2,7 @@
 Summary:	WebKit KDE browser
 Name:		rekonq
 Version:	2.3.0
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		X11/Applications/Networking
 Source0:	http://downloads.sourceforge.net/rekonq/%{name}-%{version}.tar.bz2
