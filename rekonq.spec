@@ -1,22 +1,25 @@
-# TODO: Qtoauth for Opera sync
 Summary:	WebKit KDE browser
 Name:		rekonq
-Version:	2.3.0
-Release:	2
+Version:	2.4.0
+Release:	1
 License:	GPL v3
 Group:		X11/Applications/Networking
-Source0:	http://downloads.sourceforge.net/rekonq/%{name}-%{version}.tar.bz2
-# Source0-md5:	e89ef3fd877bc1031671c30af762a150
+Source0:	http://downloads.sourceforge.net/rekonq/%{name}-%{version}.tar.xz
+# Source0-md5:	1cb82ad866681db888daf40485fd4ce2
 URL:		http://rekonq.kde.org/
 BuildRequires:	QtWebKit-devel >= 4.8.0
 BuildRequires:	automoc4
 BuildRequires:	cmake >= 2.6.2
 BuildRequires:	docbook-style-xsl
-BuildRequires:	kde4-kdelibs-devel >= 4.7.0
+BuildRequires:	kde4-kactivities-devel >= 4.8.4
+BuildRequires:	kde4-kdelibs-devel >= 4.8.4
 BuildRequires:	qca-devel >= 2.0
+BuildRequires:	qoauth-devel
 BuildRequires:	qt4-build
 BuildRequires:	qt4-linguist
 BuildRequires:	qt4-qmake >= 4.7.0
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	xz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
